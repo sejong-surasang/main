@@ -98,3 +98,4 @@ const dirn=__dirname;
 
 
 module.exports = router;
+//라우터 모듈을 외부로 반출
