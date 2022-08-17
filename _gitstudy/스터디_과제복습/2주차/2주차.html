@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf 8">
+<title>HTML5</title>
+<style>
+    html, body
+        { margin: 0; padding: 0; height: 100%;}
+    header
+        { width: 100%; height: 15%;
+        background: yellow; }
+    nav
+        { width: 15%; height: 70%; float: left;
+        background: orange; }
+    section
+        { width: 70%; height: 70%; float: left;
+        background:
+        olivedrab ;}
+    aside
+        { width: 15%; height: 70%; float: left;
+        background: orange; }
+    footer
+        { width: 100%; height: 15%; clear: both;
+        background: plum; }
+    </style>
+</head>
+<body>
+<header>
+    <h3>웹프로그래밍 과제2</h3>
+    20011683 변성은
+</header>
+<nav>
+    <h3>목차</h3>
+    <ul>
+        <li><a href="#chap1">과제 2-1</a></li>
+        <li><a href="#chap2">과제 2-2</a></li>
+        <li><a href="#chap3">과제 2-3</a></li>
+    </ul>
+</nav>
+<section>
+    <h3 id="chap1">과제2-1: 유튜브 동영상 재생</h3>
+    <iframe width="560" height="130" src="https://www.youtube.com/embed/ewjz9Jmv1qw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+
+    <h3 id="#chap2">과제2-2: 로그인 폼 만들기</h3>
+
+    <fieldset>
+        <legend>Login</legend>
+        <form>
+            <label>Username:<input type="text"></label>
+            <label>Password:<input type="password"></label>
+        </form>
+    </fieldset>
+
+    <hr>
+    <h3 id="#chap3">과제 2-3: 다양한 형태 폼 만들기</h3>
+    <fieldset>
+        <legend>도형 서식 입력</legend>
+        <label>선종류
+            <select name="line" id="line-select">
+                <option value="noline">선없음</option>
+                <option value="line">실선</option>
+                <option value="dot">점선</option>
+            </select>
+        </label>
+        <br>
+        <label>
+            선두께 <input type="number" min="0" max="50" step="1" width="20px">
+        </label>
+        <label>
+            선색<input type="color" value="#00bfff">
+        </label>
+
+        <br>
+        <label>
+            투명도<input type="range" list="list">
+            <datalist id="list">
+                <option value="0">0</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </datalist>
+
+        </label>
+
+    </fieldset>
+
+</section>
+<aside>
+    <ol>
+        <li>시맨틱 태그 예제</li>
+        <li>iframe 활용 youtube 동영상 재생</li>
+        <li>웹폼 활용</li>
+    </ol>
+
+</aside>
+<footer>
+    copyright
+</footer>
+
+</body>
+</html>

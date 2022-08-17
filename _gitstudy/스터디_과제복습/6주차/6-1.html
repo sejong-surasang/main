@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let day= prompt("월화수목금토일 중에서 입력하세요");
+     
+        switch(day) {
+            case "월":
+            case "화":
+            case "수":
+            case "목":
+            case "금": document.write(day+"는 출근");
+            break;
+            case "토":
+            case "일": document.write(day+"휴일");
+            break;
+        }
+        if(day==null){
+           alert("입력하지 않았습니다.");
+        }
+    </script>
+    
+</body>
+</html>
