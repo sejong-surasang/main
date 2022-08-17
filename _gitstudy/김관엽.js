@@ -39,7 +39,7 @@ router.post('/createpost/action', (req, res) => {
     res.redirect('/test');
 });
 */
-
+/*
 router.get('/quiz', (req, res) => { // 경로 /으로 요청이 들어왔으면
   //res.send('bye nodejs!');
   res.render('quiz', {quiz:"거미의 다리는 몇 개일까요?", answer:'8'});
@@ -54,7 +54,7 @@ router.post('/quiz/answer', (req, res) => {
       res.send("오답");
   res.redirect('/answer');
 });
-
+*/
 router.get('/posts', (req, res) => {
     testconnection.query('SELECT * from post', (error, rows) => {
       if (error) throw error;
