@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{title}}</title>
+        <style>
+            @font-face {
+                src: url("file/font/BMJUA_otf.otf");
+                font-family: "Jua";
+            }
+            * {
+                box-sizing: border-box;
+                font-family: "Jua";
+            }
+
+            
+        </style>
+        {% block style %}
+        {% endblock %}
+        <script>
+            
+        </script>
+        {% block script %}
+        {% endblock %}
+    </head>
+    <body>
+        <h1>layout의 header입니다.</h1>
+        <hr>
+        {% block content %}
+        {% endblock %}
+        <hr>
+        <h1>layout의 footer입니다</h1>
+    </body>
+</html>
