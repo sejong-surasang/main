@@ -1,0 +1,45 @@
+//search_DB설계(우선 meun DB가져옴)
+
+search[databae]
+	search[table]
+
+search[table]
+	id - 해당 메뉴 고유 id 값(int)
+	shop_id - 해당 메뉴를 판매하는 매장의 id(int)
+	food_type - 메뉴의 타임(int) 1-한식 2-중식 3-일식 4-양식 0-기타
+	name - 음식 이름(문자열)
+	price - 해당 메뉴 가격(int)
+	img_src - 해당 메뉴의 이미지 링크(varchar(1000))
+	isbest - 0,1로 나뉘는 값으로, 1이면 추천메뉴 기능 표시
+	detail_src - 해당 메뉴 상세정보 링크 (varchar(1000))
+
+
+
+//matching_DB설계 
+
+matching[databae]
+	comments[table]
+	posts[table]
+	
+
+comments[table]
+	id - 해당 댓글 고유 아이디값 (int) 
+	postID - 원 게시물의 고유 아이디값 (int) 
+	secret - 비밀 댓글 여부, TINYINT 타입을 활용 0 - 공개댓글 1 - 비밀 댓글
+	CommentPAssword - 댓글 작성자 비밀번호(문자열)
+	comment - 댓글 내용 (문자열) , 200자 제한 (변동 가능성 있음)
+
+posts[table]
+	id - 게시물 고유의 아이디 값 (int)
+	title - 게시물의 제목(문자열) , 45자 제한 (변동 가능성 있음)
+	author - 게시물 작성자 (문자열)
+	startTime - 희망하는 시간대 시작시간 (datetime), 필수선택 아님(NULL)
+	endTime - 희망하는 시간대 마감시간 (datetime) , 필수선택 아님(NULL)
+	shop - 희망하는 식당(식당코드, int),  필수선택 아님(NULL) 
+	content - 게시글 내용(문자열), 500자 제한 (변동 가능성 있음)
+	password - 작성자 비밀번호 (문자열) 
+
+
+
+
+
