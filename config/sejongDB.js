@@ -1,8 +1,8 @@
 module.exports = {
     host     : 'localhost',
     user     : 'root',
-    password : '9170',
-    database : 'menu',
+    password : 'Ekdud0408!',
+    database : 'surasang',
     multipleStatements: true,
     enableKeepAlive: true
   };

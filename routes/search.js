@@ -7,10 +7,12 @@ const DBconfig   = require('../config/sejongDB.js');
 const Connection = mysql.createConnection(DBconfig);
 
 router.get('/', function(req,res,next){
-  res.render('search/index', {title:''});
-  //res.send('shop 메인');
+  Connection.query('SELECT * from search', (error, rows) => {
+    if (error) throw error;
+    console.log('post info is: ', rows);
+    res.render('search/index', {title:'search', name:rows});
+  });
 });
-
 
 
 module.exports = router;
