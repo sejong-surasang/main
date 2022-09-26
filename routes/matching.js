@@ -7,8 +7,12 @@ const menuDBconfig   = require('../config/menuDB.js');
 const Connection = mysql.createConnection(menuDBconfig);
 
 router.get('/', function(req,res,next){
-  res.render('matching/index', {title:''});
   //res.send('shop 메인');
+  Connection.query('SELECT * from surasang.matching_comments; SELECT * FROM surasang.matching_posts;', (error, rows) => {
+    if (error) throw error;
+      console.log('post info is: ', rows);
+    res.render('matching/index', {title:'', rates:rows});
+  });
 });
 
 router.get('/matching', (req, res)=>{
