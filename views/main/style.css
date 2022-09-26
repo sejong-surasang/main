@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap");
+
+:root {
+  --text-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif KR", serif;
+}
+
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/sejong.png);
+}
+
+/* 
+
+
+
+
+
+
+----------- header -----------  */
+
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  margin: 0 auto;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.container .header h1 a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.container .header .nav {
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.container .header .nav a {
+  padding: 4px 8px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.container .header .nav a:hover {
+  box-shadow: 0 0 5px 1px;
+  border-radius: 10px;
+}
+
+/* 
+
+
+
+
+
+
+----------- hero -----------  */
+
+.container .hero {
+  display: flex;
+  position: absolute;
+  top: 0;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container .hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.container .hero #dynamicText {
+  font-size: 22px;
+  margin-bottom: 30px;
+  position: relative;
+  padding: 0 8px;
+}
+
+.container .hero #dynamicText::after {
+  content: "";
+  background-color: white;
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.container .hero #dynamicText.active::after {
+  display: none;
+}
+
+/* 
+
+
+
+
+
+
+
+
+ main 버튼 제거해서 이제 필요없음 */
+
+/* .container .hero button {
+  display: inline-block;
+  background: none;
+  border: 3px solid;
+  padding: 12px 16px;
+  color: var(--text-color);
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s;
+  font-size: 15px;
+  font-weight: bold;
+  animation: borderChange;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.container .hero button:hover {
+  font-size: 19px;
+  background-color: rgba(92, 115, 143, 0.8);
+  color: black;
+}
+
+@keyframes borderChange {
+  0% {
+    border-color: hotpink;
+  }
+  50% {
+    border-color: aqua;
+  }
+  100% {
+    border-color: hotpink;
+  }
+} */
