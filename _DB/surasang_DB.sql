@@ -40,6 +40,7 @@ CREATE TABLE `matching_comments` (
 
 LOCK TABLES `matching_comments` WRITE;
 /*!40000 ALTER TABLE `matching_comments` DISABLE KEYS */;
+INSERT INTO `matching_comments` VALUES (1,1,0,'1234','비밀 댓글이 아닙니다.'),(2,1,1,'1234','비밀 댓글입니다.');
 /*!40000 ALTER TABLE `matching_comments` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -69,6 +70,7 @@ CREATE TABLE `matching_posts` (
 
 LOCK TABLES `matching_posts` WRITE;
 /*!40000 ALTER TABLE `matching_posts` DISABLE KEYS */;
+INSERT INTO `matching_posts` VALUES (1,'테스트','관리자','2022-09-26 12:00:00','2022-09-26 13:30:00',1001,'학관 테스트','1234');
 /*!40000 ALTER TABLE `matching_posts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -170,4 +172,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-09-24 19:03:01
+-- Dump completed on 2022-09-26 13:33:48
