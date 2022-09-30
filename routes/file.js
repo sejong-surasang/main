@@ -15,4 +15,11 @@ router.get('/main/style.css', function(req,res,next){
     res.sendFile(path.join(__dirname, "../views/main/", "style.css"));
 });
 
+router.get('/shop/main.js', function(req,res,next){
+    res.sendFile(path.join(__dirname, "../views/shop/", "main.js"));
+});
+router.get('/shop/style.css', function(req,res,next){
+    res.sendFile(path.join(__dirname, "../views/shop/", "style.css"));
+});
+
 module.exports = router;

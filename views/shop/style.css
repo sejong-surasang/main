@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif KR", serif;
+}
+
+/* 
+
+
+
+
+
+
+----------- header -----------  */
+
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  margin: 0 auto;
+  align-items: center;
+  padding: 20px;
+  z-index: 5;
+  position: fixed;
+  background-color: #cb2326;
+  top: 0;
+}
+
+.container .header h1 a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
+
+.container .header .nav {
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.container .header .nav a {
+  padding: 4px 8px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.container .header .nav a:hover {
+  box-shadow: 0 0 5px 1px;
+  border-radius: 10px;
+}
+
+/* 
+
+----------- body -----------  */
+
+.container .main {
+  background-color: white;
+  height: 100vh;
+  margin: 11% 8%;
+}
+
+.container .main .title {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.container .main ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.container .main .cate {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: rgba(211, 211, 211, 0.537);
+  padding: 0.7%;
+  border-radius: 5px;
+  font-family: "Malgun Gothic", serif;
+  font-weight: 700;
+}
+
+.container .main ul .shop {
+  padding: 0.5%;
+  width: 25%;
+}
+
+.container .main ul .shop .img_wrap .show_menu {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  border: 3px solid white;
+  color: white;
+  border-radius: 25px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.container .main ul .shop .img_wrap {
+  position: relative;
+}
+
+.container .main ul .shop .img_wrap .closed {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  color: white;
+  border-radius: 25px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.container .main .shop a .shop_img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.container .main ul .shop .shop_name {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Malgun Gothic", serif;
+}
+
+/* -------------- mobile ------------ */
+
+@media screen and (max-width: 500px) {
+  /* --------------m_header------------ */
+
+  .container .header {
+    padding: 0;
+    display: block;
+    top: 0;
+  }
+
+  .container .header h1 {
+    text-align: center;
+    padding: 8px 0;
+    font-size: 1.5rem;
+    background-color: #cb2326;
+  }
+
+  .container .header h1 a {
+    margin: 0;
+  }
+
+  .container .header .nav {
+    padding: 8px 0;
+    background-color: #f0595b;
+  }
+
+  .container .header .nav a {
+    font-family: "Malgun Gothic", serif;
+  }
+
+  /* -------------- m_main ------------ */
+
+  .container .main {
+    margin: 0;
+    padding: 80px 2%;
+  }
+
+  .container .main .title {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .container .main .cate {
+    margin-top: 0;
+  }
+
+  .container .main ul .shop {
+    width: 50%;
+  }
+  .container .main .shop a .shop_img {
+    width: 100%;
+    height: auto;
+  }
+}
