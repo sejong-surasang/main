@@ -11,6 +11,16 @@ router.get('/', function(req,res,next){
   Connection.query('SELECT * from shop_lists', (error, rows) => {
     if (error) throw error;
      //console.log('shop info is: ', rows);
+      var r1=[],r2=[],r3=[],r4=[];
+      for(i in rows)
+      {
+        console.log('test : ',parseInt(rows[i].id/1000));
+        if(parseInt(rows[i].id/1000)==1)
+        {
+          r1.push(rows[i]);
+        }
+      }
+      //console.log('shop info is: ', r1);
      res.render('shop/index', {title:'검수', rates:rows});
    });
 });
