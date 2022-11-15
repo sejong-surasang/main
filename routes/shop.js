@@ -10,7 +10,7 @@ router.get('/', function(req,res,next){
   
   Connection.query('SELECT * from shop_lists', (error, rows) => {
     if (error) throw error;
-     console.log('shop info is: ', rows);
+     //console.log('shop info is: ', rows);
      res.render('shop/index', {title:'검수', rates:rows});
    });
 });

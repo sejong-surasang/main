@@ -13,6 +13,10 @@ imgrouter.get('/errer/300x200', function(req,res,next){
     res.sendFile(path.join(__dirname, "../views/src/img/", "error_300x200.jpg"));
 });
 
+imgrouter.get('/main', function(req,res,next){
+    res.sendFile(path.join(__dirname, "../views/main/images/", "sejong.png"));
+});
+
 imgrouter.get('/haksik', function(req,res,next){
     res.sendFile(path.join(__dirname, "../views/src/img/", "haksik/메인.jpeg"));
 });
