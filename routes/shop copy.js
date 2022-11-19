@@ -1,4 +1,4 @@
-//db분리 작업 중 파일
+//db분리 전 원본 파일
 
 const express=require('express');
 const router = express.Router();
@@ -22,8 +22,6 @@ router.get('/', function(req,res,next){
         {
           r1.push(rows[i]);
         }
-        //r1에 id의 천의 자리가 1인 행 저장 완료
-        //나눠서 프론트에 전송 바람
         //else if()
       }
       //console.log('shop info is: ', r1);
