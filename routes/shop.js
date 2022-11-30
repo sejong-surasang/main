@@ -24,10 +24,21 @@ router.get('/', function(req,res,next){
         }
         //r1에 id의 천의 자리가 1인 행 저장 완료
         //나눠서 프론트에 전송 바람
-        //else if()
+        else if(plag==2)
+        {
+          r2.push(rows[i]);
+        }
+        else if(plag==3)
+        {
+          r3.push(rows[i]);
+        }
+        else if(plag==4)
+        {
+          r4.push(rows[i]);
+        }
       }
       //console.log('shop info is: ', r1);
-     res.render('shop/index', {title:'검수', rates:rows});
+     res.render('shop/index', {title:'검수', rates:rows,r1:r1,r2:r2,r3:r3,r4:r4});
    });
 });
 
