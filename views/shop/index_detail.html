@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/file/main/style.css" />
-    <script src="file/main/main.js" defer></script>
+    <link rel="stylesheet" href="/file/shop/style.css" />
+    <script src="/file/shop/main.js" defer></script>
     <title>surasang</title>
   </head>
 
@@ -21,11 +21,20 @@
           <li><a href="#">검색</a></li>
         </ul>
       </div>
+      <!-- ----------- main -----------  -->
+      <div class="main">
+        <h3 class="title">식당 상세정보</h3>
 
-      <!-- ----------- hero -----------  -->
-      <div class="hero">
-        <h2>학교에서 밥을 먹자</h2>
-        <div id="dynamicText"></div>
+        <h3 class="cate">{{name}}</h3>
+        
+            
+            
+        <p class="info">notice<br>{{notice}}</p><br>
+        <p class="info">open<br>{{opening_hour}}</p><br>
+        <p class="info">location<br>{{location_desc}}</p><br>
+            
+        
+        
       </div>
     </div>
   </body>
