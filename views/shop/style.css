@@ -138,6 +138,29 @@
   font-family: "Malgun Gothic", serif;
 }
 
+
+
+
+
+
+a:link {
+  color: black;
+  text-decoration-line: none;
+}
+a:hover{
+  color:grey;
+}
+a:active{
+  color:red;
+}
+/* -- 아래 클래스는 index_detail.html에만 적용할 부분 -- */
+.container .main .info {
+  text-align: left;
+  font-family: "Malgun Gothic", serif;
+}
+
+
+
 /* -------------- mobile ------------ */
 
 @media screen and (max-width: 500px) {
